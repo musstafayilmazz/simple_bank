@@ -14,5 +14,6 @@ run-code:
 	@go run main.go
 sqlc:
 	sqlc generate
-
+test:
+	go test -v -cover ./...
 .PHONY: start-docker createdb dropdb stop-docker migratedown migrateup
