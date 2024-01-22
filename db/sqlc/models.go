@@ -33,4 +33,5 @@ type Transfer struct {
 	Name          sql.NullString `json:"name"`
 	ContinentName sql.NullString `json:"continent_name"`
 	CreatedAt     time.Time      `json:"created_at"`
+	Amount        int64          `json:"amount"`
 }
