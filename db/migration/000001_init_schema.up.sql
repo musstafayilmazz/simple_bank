@@ -18,11 +18,9 @@ CREATE TABLE "transfers" (
                              "id" bigserial,
                              "from_account_id" bigint NOT NULL,
                              "to_account_id" bigint NOT NULL,
-                             "code" int,
-                             "name" varchar,
-                             "continent_name" varchar,
                              "created_at" timestamptz NOT NULL DEFAULT (now()),
-                             PRIMARY KEY ("id", "code")
+                             "amount" bigint NOT NULL,
+                             PRIMARY KEY ("id")
 );
 
 CREATE INDEX ON "accounts" ("owner");

@@ -26,12 +26,9 @@ type Entry struct {
 }
 
 type Transfer struct {
-	ID            int64          `json:"id"`
-	FromAccountID int64          `json:"from_account_id"`
-	ToAccountID   int64          `json:"to_account_id"`
-	Code          int32          `json:"code"`
-	Name          sql.NullString `json:"name"`
-	ContinentName sql.NullString `json:"continent_name"`
-	CreatedAt     time.Time      `json:"created_at"`
-	Amount        int64          `json:"amount"`
+	ID            int64     `json:"id"`
+	FromAccountID int64     `json:"from_account_id"`
+	ToAccountID   int64     `json:"to_account_id"`
+	CreatedAt     time.Time `json:"created_at"`
+	Amount        int64     `json:"amount"`
 }
